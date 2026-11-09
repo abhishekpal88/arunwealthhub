@@ -99,37 +99,42 @@
       color: #b3b9c9;
     }
 
-    /* Revenue Cards */
-    .earning-card {
+    /* Attached Screenshot / Live Proof Image */
+    .screenshot-container {
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px dashed #3f51b5;
       border-radius: 16px;
-      padding: 16px;
+      padding: 10px;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .screenshot-label {
+      font-size: 12px;
+      color: #ffaa00;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+
+    .screenshot-img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      display: block;
+    }
+
+    /* Revenue Display Card */
+    .earning-header {
+      font-size: 16px;
+      font-weight: 700;
+      color: #00d2ff;
       margin-bottom: 12px;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-    }
-
-    .gradient-1 {
-      background: linear-gradient(135deg, #6c1374, #360742);
-    }
-
-    .gradient-2 {
-      background: linear-gradient(135deg, #371b8f, #1e0952);
-    }
-
-    .gradient-3 {
-      background: linear-gradient(135deg, #a61c5d, #580838);
-    }
-
-    .earning-val {
-      font-size: 28px;
-      font-weight: 800;
-      color: #ffffff;
-    }
-
-    .earning-label {
-      font-size: 13px;
-      color: #d1c4e9;
-      margin-top: 2px;
+      text-align: center;
     }
 
     /* Highlights */
@@ -215,20 +220,14 @@
       <p>जानिए कैसे लोग डिजिटल स्किल्स सीखकर हर हफ्ते ₹10,000 से ₹25,000+ कमा रहे हैं।</p>
     </div>
 
-    <!-- Live Proof Cards -->
-    <div class="earning-card gradient-1">
-      <div class="earning-val">₹ 1,700</div>
-      <div class="earning-label">Today's Revenue</div>
-    </div>
-
-    <div class="earning-card gradient-2">
-      <div class="earning-val">₹ 13,800</div>
-      <div class="earning-label">7 Days Revenue</div>
-    </div>
-
-    <div class="earning-card gradient-3">
-      <div class="earning-val">₹ 24,420</div>
-      <div class="earning-label">30 Days Revenue</div>
+    <!-- Live Proof Screenshot Attached -->
+    <div class="screenshot-container">
+      <div class="screenshot-label">
+        <span style="display:inline-block; width:8px; height:8px; background:#ffaa00; border-radius:50%; animate: pulse 1s infinite;"></span>
+        Live Earning Proof
+      </div>
+      <!-- screenshot.png is the screenshot we uploaded -->
+      <img class="screenshot-img" src="screenshot.png" alt="Abhishek Kumar RichIND Earnings Screenshot" onerror="this.src='https://placehold.co/450x800/121520/ffffff?text=Earning+Proof+Screenshot';">
     </div>
 
     <!-- Key Highlights -->
