@@ -1,188 +1,263 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RichIND - Earn with Digital Skills</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 
-<title>Digital Skills | Welcome</title>
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1930246417620336');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" 
+         src="https://www.facebook.com/tr?id=1930246417620336&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
 
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
 
-body {
-    font-family: Arial, sans-serif;
-    background: #f4f0ff;
-    color: #222;
-}
+    body {
+      background: #0d0f18;
+      color: #ffffff;
+      line-height: 1.5;
+      padding-bottom: 95px;
+    }
 
-.container {
-    max-width: 650px;
-    margin: auto;
-    padding: 18px;
-}
+    .container {
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 20px 16px;
+    }
 
-.hero {
-    text-align: center;
-    padding: 30px 15px;
-}
+    .header-logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
 
-.hero h1 {
-    color: #5520a0;
-    font-size: 30px;
-    margin-bottom: 12px;
-}
+    .header-logo h2 {
+      font-size: 26px;
+      font-weight: 800;
+      color: #ffaa00;
+      letter-spacing: 1px;
+    }
 
-.hero p {
-    color: #555;
-    line-height: 1.6;
-}
+    .header-logo span {
+      color: #00d2ff;
+    }
 
-.heading {
-    text-align: center;
-    color: #6715a9;
-    font-size: 24px;
-    margin: 20px 0;
-}
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255, 170, 0, 0.15);
+      color: #ffbb33;
+      border: 1px solid rgba(255, 170, 0, 0.4);
+      padding: 6px 14px;
+      border-radius: 30px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
 
-.photo-frame {
-    padding: 7px;
-    border-radius: 20px;
-    background: linear-gradient(
-        135deg,
-        #ff00a8,
-        #7025ff,
-        #00c8ff,
-        #ff9d00
-    );
-    box-shadow: 0 8px 25px rgba(112,37,255,0.25);
-}
+    .hero {
+      text-align: center;
+      margin-bottom: 25px;
+    }
 
-.photo-frame img {
-    width: 100%;
-    display: block;
-    border-radius: 15px;
-}
+    .hero h1 {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-bottom: 12px;
+    }
 
-.caption {
-    background: white;
-    text-align: center;
-    padding: 18px;
-    margin-top: 15px;
-    border-radius: 14px;
-}
+    .hero h1 span {
+      background: linear-gradient(90deg, #ff8a00, #e52e71);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
-.caption h2 {
-    color: #6520a5;
-    margin-bottom: 10px;
-}
+    .hero p {
+      font-size: 14px;
+      color: #b3b9c9;
+    }
 
-.caption p {
-    color: #555;
-    line-height: 1.6;
-}
+    /* Revenue Cards */
+    .earning-card {
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
 
-.disclaimer {
-    font-size: 12px;
-    color: #777;
-    text-align: center;
-    margin: 14px 5px;
-    line-height: 1.5;
-}
+    .gradient-1 {
+      background: linear-gradient(135deg, #6c1374, #360742);
+    }
 
-.contact {
-    background: white;
-    padding: 25px;
-    border-radius: 18px;
-    text-align: center;
-    margin-top: 25px;
-}
+    .gradient-2 {
+      background: linear-gradient(135deg, #371b8f, #1e0952);
+    }
 
-.contact h2 {
-    color: #54208c;
-    margin-bottom: 12px;
-}
+    .gradient-3 {
+      background: linear-gradient(135deg, #a61c5d, #580838);
+    }
 
-.contact p {
-    color: #555;
-    line-height: 1.6;
-}
+    .earning-val {
+      font-size: 28px;
+      font-weight: 800;
+      color: #ffffff;
+    }
 
-.whatsapp {
-    display: block;
-    background: #25D366;
-    color: white;
-    text-decoration: none;
-    padding: 17px;
-    border-radius: 12px;
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 20px;
-}
+    .earning-label {
+      font-size: 13px;
+      color: #d1c4e9;
+      margin-top: 2px;
+    }
 
-.footer {
-    text-align: center;
-    padding: 25px 5px;
-    color: #777;
-    font-size: 13px;
-}
-</style>
+    /* Highlights */
+    .features-box {
+      background: #161a29;
+      border-radius: 16px;
+      padding: 20px;
+      margin: 24px 0;
+      border: 1px solid #23293f;
+    }
+
+    .features-box h3 {
+      font-size: 17px;
+      color: #ffaa00;
+      margin-bottom: 14px;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 14px;
+      color: #e2e8f0;
+      margin-bottom: 10px;
+    }
+
+    .feature-item svg {
+      flex-shrink: 0;
+      color: #00e676;
+    }
+
+    /* Sticky CTA */
+    .sticky-cta {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(13, 15, 24, 0.95);
+      backdrop-filter: blur(8px);
+      padding: 12px 16px;
+      box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.6);
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+    }
+
+    .btn-main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      max-width: 450px;
+      background: linear-gradient(90deg, #25D366, #128C7E);
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 700;
+      padding: 14px 20px;
+      border-radius: 50px;
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+      transition: transform 0.2s;
+    }
+
+    .btn-main:active {
+      transform: scale(0.98);
+    }
+  </style>
 </head>
-
 <body>
 
-<div class="container">
+  <div class="container">
+    <!-- Header -->
+    <div class="header-logo">
+      <h2>Rich<span>IND</span></h2>
+      <p style="font-size: 12px; color: #8c93a8;">Skill to Success</p>
+    </div>
 
+    <!-- Hero Section -->
     <div class="hero">
-        <h1>Welcome!</h1>
-        <p>
-            Explore digital skills and learning
-            opportunities. Check out the dashboard
-            snapshot below.
-        </p>
+      <div class="hero-badge">Brahmastra Package</div>
+      <h1>सिर्फ स्मार्टफोन का उपयोग करके <span>रोजाना कमाई</span> शुरू करें!</h1>
+      <p>जानिए कैसे लोग डिजिटल स्किल्स सीखकर हर हफ्ते ₹10,000 से ₹25,000+ कमा रहे हैं।</p>
     </div>
 
-    <h2 class="heading">💰 Income Dashboard</h2>
-
-    <!-- YOUR DASHBOARD PHOTO -->
-    <div class="photo-frame">
-        <img src="1000160520.png"
-             alt="RichIND Dashboard Snapshot">
+    <!-- Live Proof Cards -->
+    <div class="earning-card gradient-1">
+      <div class="earning-val">₹ 1,700</div>
+      <div class="earning-label">Today's Revenue</div>
     </div>
 
-    <div class="caption">
-        <h2>Dashboard Snapshot</h2>
-        <p>
-            A shared dashboard view for informational
-            purposes. Individual results may vary.
-            Earnings are not guaranteed.
-        </p>
+    <div class="earning-card gradient-2">
+      <div class="earning-val">₹ 13,800</div>
+      <div class="earning-label">7 Days Revenue</div>
     </div>
 
-    <div class="contact">
-        <h2>Need More Information?</h2>
-
-        <p>
-            Have questions? Connect with us directly
-            on WhatsApp. We will be happy to assist you.
-        </p>
-
-        <a class="whatsapp"
-           href="https://wa.me/918808174910"
-           target="_blank"
-           rel="noopener noreferrer">
-           🟢 Chat With Us on WhatsApp
-        </a>
+    <div class="earning-card gradient-3">
+      <div class="earning-val">₹ 24,420</div>
+      <div class="earning-label">30 Days Revenue</div>
     </div>
 
-    <div class="footer">
-        Thank you for visiting!
+    <!-- Key Highlights -->
+    <div class="features-box">
+      <h3>इस पैकेज में आपको क्या मिलेगा?</h3>
+      <div class="feature-item">
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+        <span>स्टेप-बाय-स्टेप एफिलिएट मार्केटिंग ट्रेनिंग</span>
+      </div>
+      <div class="feature-item">
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+        <span>डेली लाइव गाइडेंस और सपोर्ट</span>
+      </div>
+      <div class="feature-item">
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+        <span>हाई-कमिशन स्ट्रक्चर (Same Day Payout)</span>
+      </div>
     </div>
+  </div>
 
-</div>
+  <!-- Sticky CTA WhatsApp Button -->
+  <div class="sticky-cta">
+    <a href="https://wa.me/918808174910?text=Hi%2C%20mujhe%20RichIND%20ke%20bare%20me%20details%20chahiye" 
+       class="btn-main" 
+       onclick="fbq('track', 'Lead');">
+      <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+      व्हाट्सएप पर जानकारी लें
+    </a>
+  </div>
 
 </body>
 </html>
