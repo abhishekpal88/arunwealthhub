@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Welcome | Digital Information</title>
+<title>Digital Skills & Information</title>
 
 <style>
 * {
@@ -15,39 +15,42 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f3f6fb;
+    background: #f5f0ff;
     color: #222;
 }
 
 .container {
-    max-width: 600px;
+    max-width: 650px;
     margin: auto;
-    padding: 20px;
+    padding: 18px;
 }
 
-.header {
+.hero {
+    background: linear-gradient(135deg,#32106b,#8c19bd,#ed168c);
+    padding: 30px 20px;
     text-align: center;
-    padding: 30px 10px;
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 22px;
 }
 
-.header h1 {
+.hero h1 {
     font-size: 28px;
-    color: #17356b;
     margin-bottom: 12px;
 }
 
-.header p {
-    color: #555;
+.hero p {
     line-height: 1.6;
     font-size: 15px;
 }
 
-.video-container {
-    background: #000;
-    border-radius: 14px;
+.video-box {
+    background: #111;
+    border: 3px solid #a52be2;
+    border-radius: 18px;
     overflow: hidden;
-    margin: 20px 0;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+    margin-bottom: 28px;
+    box-shadow: 0 5px 25px #b56aff55;
 }
 
 video {
@@ -56,47 +59,109 @@ video {
     height: auto;
 }
 
-.info {
-    background: #fff;
-    padding: 25px;
-    border-radius: 14px;
+.section-title {
     text-align: center;
-    margin: 20px 0;
+    font-size: 25px;
+    color: #5512a0;
+    margin: 25px 0 18px;
 }
 
-.info h2 {
-    color: #17356b;
+.proof-card {
+    background: linear-gradient(135deg,#6512a7,#c20b9a,#4b28d6);
+    padding: 12px;
+    border-radius: 22px;
+    box-shadow: 0 8px 25px #6b22bb55;
+}
+
+.proof-card img {
+    width: 100%;
+    display: block;
+    border-radius: 14px;
+    background: white;
+}
+
+.proof-caption {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 15px 5px 8px;
+}
+
+.stats {
+    display: grid;
+    gap: 14px;
+    margin: 22px 0;
+}
+
+.stat {
+    padding: 22px;
+    border-radius: 16px;
+    color: white;
+    background: linear-gradient(120deg,#8b16bd,#e20b91);
+    box-shadow: 0 5px 15px #a52be244;
+}
+
+.stat:nth-child(2) {
+    background: linear-gradient(120deg,#4222b8,#8144ef);
+}
+
+.stat:nth-child(3) {
+    background: linear-gradient(120deg,#c00080,#f02b9e);
+}
+
+.stat h2 {
+    font-size: 29px;
+    margin-bottom: 7px;
+}
+
+.stat p {
+    font-size: 15px;
+}
+
+.disclaimer {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    line-height: 1.6;
+    margin: 15px 5px;
+}
+
+.contact {
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 18px;
+    margin-top: 25px;
+}
+
+.contact h2 {
+    color: #48118c;
     margin-bottom: 12px;
 }
 
-.info p {
+.contact p {
     color: #555;
-    line-height: 1.7;
+    line-height: 1.6;
 }
 
-.whatsapp-btn {
+.whatsapp {
     display: block;
-    width: 100%;
-    padding: 17px;
     background: #25D366;
     color: white;
-    text-align: center;
+    padding: 17px;
+    border-radius: 12px;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    border-radius: 10px;
-    margin: 20px 0;
-}
-
-.whatsapp-btn:hover {
-    background: #1da851;
+    margin-top: 20px;
 }
 
 .footer {
     text-align: center;
-    padding: 20px;
-    font-size: 13px;
+    padding: 25px 5px;
     color: #777;
+    font-size: 13px;
 }
 </style>
 </head>
@@ -105,45 +170,83 @@ video {
 
 <div class="container">
 
-    <div class="header">
-        <h1>Welcome!</h1>
-        <p>
-            Thank you for visiting our page.
-            Watch the video below to learn more.
-        </p>
+<div class="hero">
+    <h1>Welcome to Digital Skills!</h1>
+    <p>
+        Explore digital learning opportunities
+        and watch the presentation below
+        to understand more.
+    </p>
+</div>
+
+<h2 class="section-title">Watch Presentation</h2>
+
+<div class="video-box">
+    <video controls playsinline preload="metadata">
+        <source src="1000160522.mp4" type="video/mp4">
+        Video cannot be played.
+    </video>
+</div>
+
+<h2 class="section-title">💰 Income Dashboard Snapshot</h2>
+
+<div class="proof-card">
+
+    <img src="1000160520.png"
+         alt="Income Dashboard Screenshot">
+
+    <div class="proof-caption">
+        Dashboard Snapshot
     </div>
 
-    <!-- VIDEO PLAYER -->
-    <div class="video-container">
-        <video controls playsinline preload="metadata">
-            <source src="1000160522.mp4" type="video/mp4">
-            Your browser does not support video playback.
-        </video>
+</div>
+
+<div class="stats">
+
+    <div class="stat">
+        <h2>₹1,700</h2>
+        <p>Today's Revenue</p>
     </div>
 
-    <!-- INFORMATION -->
-    <div class="info">
-        <h2>Need More Information?</h2>
-        <p>
-            If you have any questions or need
-            further information, feel free to
-            connect with us directly.
-            We will be happy to assist you.
-        </p>
+    <div class="stat">
+        <h2>₹13,800</h2>
+        <p>7 Days Revenue</p>
     </div>
 
-    <!-- WHATSAPP BUTTON -->
-    <a
-      class="whatsapp-btn"
-      href="https://wa.me/918808174910"
-      target="_blank"
-      rel="noopener noreferrer">
-      Chat With Us on WhatsApp
+    <div class="stat">
+        <h2>₹24,420</h2>
+        <p>30 Days Revenue</p>
+    </div>
+
+</div>
+
+<p class="disclaimer">
+    Dashboard figures are shown as a shared snapshot.
+    Individual results may vary. Earnings are not guaranteed.
+</p>
+
+<div class="contact">
+
+    <h2>Need More Information?</h2>
+
+    <p>
+        Have questions about digital skills
+        and learning opportunities?
+        Connect with us directly on WhatsApp.
+    </p>
+
+    <a class="whatsapp"
+       href="https://wa.me/918808174910"
+       target="_blank"
+       rel="noopener noreferrer">
+       🟢 Chat on WhatsApp
     </a>
 
-    <div class="footer">
-        Thank you for visiting!
-    </div>
+</div>
+
+<div class="footer">
+    Thank you for visiting!
+</div>
 
 </div>
 
